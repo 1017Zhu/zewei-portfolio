@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<template id="__bundler_thumbnail" data-bg-color="#0b0b0a">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0b0b0a"></rect>
+    <circle cx="600" cy="400" r="210" fill="none" stroke="#d8ff3e" stroke-opacity="0.5" stroke-width="3"></circle>
+    <ellipse cx="600" cy="400" rx="210" ry="80" fill="none" stroke="#d8ff3e" stroke-opacity="0.28" stroke-width="2"></ellipse>
+    <ellipse cx="600" cy="400" rx="80" ry="210" fill="none" stroke="#d8ff3e" stroke-opacity="0.28" stroke-width="2"></ellipse>
+    <path d="M470 470 Q600 250 760 360" fill="none" stroke="#d8ff3e" stroke-width="4"></path>
+    <circle cx="470" cy="470" r="10" fill="#d8ff3e"></circle>
+    <circle cx="760" cy="360" r="7" fill="#f5ffdc"></circle>
+    <text x="600" y="700" fill="#ECEBE3" font-family="monospace" font-size="46" text-anchor="middle" letter-spacing="6">Zewei · GTM</text>
+  </svg>
+</template>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<script src="image-slot.js"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #0b0b0a; }
+  ::selection { background: #d8ff3e; color: #0b0b0a; }
+  image-slot { display: block; }
+  @keyframes sy-blink { 0%,100% { opacity: 1; } 50% { opacity: .25; } }
+  @keyframes sy-fall { 0% { transform: translateY(0); } 50% { transform: translateY(8px); } 100% { transform: translateY(0); } }
+  @keyframes sy-breathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.045); } }
+</style>
+</helmet>
+<div style="background:#0b0b0a;color:#ECEBE3;font-family:'Bricolage Grotesque',sans-serif;min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased">
+
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:20px 40px;backdrop-filter:blur(12px);background:linear-gradient(180deg,rgba(11,11,10,.85),rgba(11,11,10,.35));border-bottom:1px solid rgba(255,255,255,.06)">
+    <a href="#top" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.04em;color:#ECEBE3;text-decoration:none;display:flex;gap:10px;align-items:center">
+      <span style="color:#d8ff3e">◆</span><span>Zewei</span>
+    </a>
+    <div style="display:flex;gap:28px;align-items:center;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.06em">
+      <a href="#about" style="color:#9a998f;text-decoration:none" style-hover="color:#ECEBE3">About</a>
+      <a href="#work" style="color:#9a998f;text-decoration:none" style-hover="color:#ECEBE3">Work</a>
+      <a href="#experience" style="color:#9a998f;text-decoration:none" style-hover="color:#ECEBE3">Experience</a>
+      <a href="#blog" style="color:#9a998f;text-decoration:none" style-hover="color:#ECEBE3">Blog</a>
+      <a href="#contact" style="color:#9a998f;text-decoration:none" style-hover="color:#ECEBE3">Contact</a>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;color:#cfcec4">
+      <span style="width:7px;height:7px;border-radius:50%;background:#d8ff3e;animation:sy-blink 2.4s ease-in-out infinite"></span>
+      <span>Open to new opportunities</span>
+    </div>
+  </nav>
+
+  <section id="top" style="position: relative; min-height: 60vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 140px 40px 64px">
+    <canvas data-dotfield="" style="position: absolute; inset: 0; width: 1237px; z-index: 0; pointer-events: none; height: 619px"></canvas>
+
+    <h1 style="margin: 0 0 28px; font-weight: 700; letter-spacing: -.03em; line-height: 1.08; font-size: clamp(34px,5.2vw,72px); margin-bottom: 20px" data-reveal="">Unleashing Chinese hardware brands onto the world stage.</h1><div style="font-family: 'JetBrains Mono',monospace; font-size: 13px; letter-spacing: .14em; color: #d8ff3e; font-weight: 600; margin-bottom: 60px; margin-top: 1px; position: static" data-reveal="">GTM · HARDWARE, GLOBAL</div>
+  </section>
+
+  <section id="about" style="border-top:1px solid rgba(255,255,255,.08);padding:120px 40px">
+    <div style="display:grid;grid-template-columns:1fr;gap:64px;max-width:1280px;margin:0 auto">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:#d8ff3e" data-reveal="">( 01 ) About Me</div>
+      <div style="display:grid;grid-template-columns:340px 1fr;gap:64px;align-items:start" data-reveal="">
+        <image-slot id="about-portrait" style="width:100%;aspect-ratio:3/4;height:auto" shape="rounded" radius="6" placeholder="Drop your headshot here"></image-slot>
+        <div>
+          <p style="margin:0 0 28px;font-size:clamp(24px,3vw,40px);font-weight:300;line-height:1.32;letter-spacing:-.02em">Hello! I'm Zewei Zhu, a GTM lead for hardware going global. Currently at Dreame Technology, driving product planning, market entry, and launches across emerging markets.</p>
+          <p style="margin:0 0 40px;max-width:600px;font-size:17px;font-weight:300;line-height:1.7;color:#a9a89e">
+            From market and competitor research, to product roadmapping, category P&amp;L ownership, and launch events across multiple regions — I translate a product's story into reasons local customers actually buy. Ranked first in my cohort studying Brand Management in Hamburg, then International Trade Strategy at Warwick, UK. I believe growth comes from a full system of positioning, pricing, and channel — not single-channel spend. Outside work: film photography, the outdoors, and basketball.
+          </p>
+          <div style="display:flex;gap:48px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" style="border-top:1px solid rgba(255,255,255,.08);padding:120px 40px">
+    <div style="max-width:1280px;margin:0 auto">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:64px;flex-wrap:wrap;gap:16px" data-reveal="">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:#d8ff3e">( 02 ) Selected Work</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.06em;color:#9a998f">2024 — Present · {{ projectCount }} projects</div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-auto-rows:280px;gap:20px" data-reveal="">
+        <sc-for list="{{ mosaicCards }}" as="c" hint-placeholder-count="6">
+          <a href="Project.dc.html?id={{ c.slug }}" style="grid-column:{{ c.col }};grid-row:{{ c.row }};position:relative;display:block;border-radius:8px;overflow:hidden;text-decoration:none;color:#ECEBE3" style-hover="opacity:.92">
+            <image-slot id="{{ c.slotId }}-mosaic" src="{{ c.img }}" style="position:absolute;inset:0;width:100%;height:100%;animation:sy-breathe 7s ease-in-out infinite;transition:transform .5s cubic-bezier(.2,.7,.2,1)" style-hover="transform:scale(1.08);animation-play-state:paused" shape="rect" placeholder="Drop project image here"></image-slot>
+            <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.15) 45%,rgba(0,0,0,0) 65%);pointer-events:none"></div>
+            <div style="position:absolute;left:20px;right:20px;bottom:18px">
+              <div style="font-size:clamp(17px,1.8vw,24px);font-weight:600;letter-spacing:-.01em;line-height:1.2;margin-bottom:8px">{{ c.title }}</div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:#d8ff3e;text-transform:uppercase">{{ c.brand }}</div>
+            </div>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" style="border-top:1px solid rgba(255,255,255,.08);padding:120px 40px">
+    <div style="max-width:1280px;margin:0 auto">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:#d8ff3e;margin-bottom:64px" data-reveal="">( 03 ) Experience</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:#9a998f;margin-bottom:32px" data-reveal="">Work</div>
+      <div data-reveal="">
+        <div style="display:grid;grid-template-columns:160px 1fr 200px;gap:32px;padding:32px 0;border-top:1px solid rgba(255,255,255,.08);align-items:baseline" style-hover="background:rgba(216,255,62,.03)">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.04em;color:#9a998f">Dec 2025 — Present</div>
+          <div>
+            <div style="font-size:clamp(22px,2.4vw,30px);font-weight:300;letter-spacing:-.01em">GTM · Emerging Markets</div>
+            <div style="font-size:15px;color:#a9a89e;font-weight:300;margin-top:6px">Dreame Technology</div>
+          </div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9a998f;text-align:right">Shenzhen, China</div>
+        </div>
+        <div style="display:grid;grid-template-columns:160px 1fr 200px;gap:32px;padding:32px 0;border-top:1px solid rgba(255,255,255,.08);align-items:baseline" style-hover="background:rgba(216,255,62,.03)">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.04em;color:#9a998f">Aug 2025 — Dec 2025</div>
+          <div>
+            <div style="font-size:clamp(22px,2.4vw,30px);font-weight:300;letter-spacing:-.01em">Market Analyst — Intern</div>
+            <div style="font-size:15px;color:#a9a89e;font-weight:300;margin-top:6px">Ninebot</div>
+          </div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9a998f;text-align:right">Changzhou, China</div>
+        </div>
+        <div style="display:grid;grid-template-columns:160px 1fr 200px;gap:32px;padding:32px 0;border-top:1px solid rgba(255,255,255,.08);align-items:baseline" style-hover="background:rgba(216,255,62,.03)">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.04em;color:#9a998f">Apr 2024 — Sep 2024</div>
+          <div>
+            <div style="font-size:clamp(22px,2.4vw,30px);font-weight:300;letter-spacing:-.01em">Strategic Product Management — Intern</div>
+            <div style="font-size:15px;color:#a9a89e;font-weight:300;margin-top:6px">KISKA Design</div>
+          </div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9a998f;text-align:right">Shanghai</div>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,.08)"></div>
+      </div>
+
+      <div data-reveal="" style="margin-top:96px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:#9a998f;margin-bottom:32px">Education</div>
+        <div style="display:grid;grid-template-columns:160px 1fr 200px;gap:32px;padding:28px 0;border-top:1px solid rgba(255,255,255,.08);align-items:baseline" style-hover="background:rgba(216,255,62,.03)">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.04em;color:#9a998f">Sep 2024 — Dec 2025</div>
+          <div>
+            <div style="font-size:clamp(20px,2.2vw,27px);font-weight:300;letter-spacing:-.01em">University of Warwick</div>
+            <div style="font-size:15px;color:#a9a89e;font-weight:300;margin-top:6px">MSc International Trade, Strategy &amp; Operations</div>
+          </div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9a998f;text-align:right">Merit · Coventry, UK</div>
+        </div>
+        <div style="display:grid;grid-template-columns:160px 1fr 200px;gap:32px;padding:28px 0;border-top:1px solid rgba(255,255,255,.08);align-items:baseline" style-hover="background:rgba(216,255,62,.03)">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.04em;color:#9a998f">Oct 2020 — Jun 2024</div>
+          <div>
+            <div style="font-size:clamp(20px,2.2vw,27px);font-weight:300;letter-spacing:-.01em">Brand University of Applied Sciences</div>
+            <div style="font-size:15px;color:#a9a89e;font-weight:300;margin-top:6px">BA Brand Management</div>
+          </div><div style="font-family: 'JetBrains Mono',monospace; font-size: 12px; color: #9a998f; text-align: right; width: 200px; position: absolute; left: 997px; top: 3585px">Ranked 1/31 · Hamburg, Germany</div>
+          
+        </div>
+        
+        <div style="border-top:1px solid rgba(255,255,255,.08)"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" style="border-top:1px solid rgba(255,255,255,.08);padding:120px 40px">
+    <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px">
+      <div data-reveal="">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:#d8ff3e;margin-bottom:40px">( 04 ) Expertise</div>
+        <div style="display:flex;flex-direction:column">
+          <sc-for list="{{ skills }}" as="s" hint-placeholder-count="5">
+            <div style="font-size:clamp(26px,3vw,42px);font-weight:300;letter-spacing:-.02em;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.07)" style-hover="color:#d8ff3e;padding-left:14px">{{ s }}</div>
+          </sc-for>
+        </div>
+      </div>
+      <div data-reveal="">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:#9a998f;margin-bottom:40px">Platforms / Tools</div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <sc-for list="{{ tools }}" as="t" hint-placeholder-count="8">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.03em;color:#cfcec4;border:1px solid rgba(255,255,255,.14);border-radius:100px;padding:10px 18px" style-hover="border-color:#d8ff3e;color:#d8ff3e">{{ t }}</span>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" style="border-top:1px solid rgba(255,255,255,.08);padding:120px 40px">
+    <div style="max-width:1280px;margin:0 auto">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:64px;flex-wrap:wrap;gap:16px" data-reveal="">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:#d8ff3e">( 06 ) Blog</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.06em;color:#9a998f">Notes on hardware GTM, for fellow builders</div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0" data-reveal="">
+        <sc-for list="{{ blogCategories }}" as="cat" hint-placeholder-count="3">
+          <div style="padding:0 32px;border-left:1px solid rgba(255,255,255,.08)" style-hover="background:rgba(216,255,62,.02)">
+            <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;color:#d8ff3e;margin-bottom:8px">{{ cat.name }}</div>
+            <div style="font-size:14px;color:#8a897f;font-weight:300;margin-bottom:36px;line-height:1.5">{{ cat.desc }}</div>
+            <div style="display:flex;flex-direction:column;gap:0;border-top:1px solid rgba(255,255,255,.08)">
+              <div style="padding:28px 0;border-bottom:1px solid rgba(255,255,255,.08)">
+                <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;color:#6f6e64;margin-bottom:10px">Coming soon</div>
+                <div style="font-size:17px;font-weight:300;line-height:1.4;color:#6f6e64">First post on {{ cat.name }} is in the works</div>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-top: 1px solid rgba(255,255,255,.08); padding: 140px 40px 60px">
+    <div style="max-width:1280px;margin:0 auto">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:#d8ff3e;margin-bottom:48px" data-reveal="">( 05 ) Contact</div>
+      <a href="mailto:zeweizhu588@gmail.com" style="text-decoration:none;color:#ECEBE3;display:block" data-reveal="">
+        <h2 style="margin:0;font-weight:300;letter-spacing:-.03em;line-height:.95;font-size:clamp(48px,11vw,170px)" style-hover="color:#d8ff3e">Let's talk →</h2>
+      </a>
+
+      <div data-reveal="" style="max-width:640px;margin-top:80px">
+        <sc-if value="{{ !submitted }}" hint-placeholder-val="{{ true }}">
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onSubmit="{{ handleSubmit }}" style="display:flex;flex-direction:column;gap:20px">
+            <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;color:#9a998f">Leave your contact info, I'll get back to you soon</div>
+            <input name="name" type="text" placeholder="Name" required="" style="background:transparent;border:none;border-bottom:1px solid rgba(255,255,255,.18);color:#ECEBE3;font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:300;padding:12px 2px;outline:none" style-focus="border-bottom-color:#d8ff3e">
+            <input name="phone" type="tel" placeholder="Phone / WeChat" required="" style="background:transparent;border:none;border-bottom:1px solid rgba(255,255,255,.18);color:#ECEBE3;font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:300;padding:12px 2px;outline:none" style-focus="border-bottom-color:#d8ff3e">
+            <textarea name="message" placeholder="What's on your mind? (optional)" rows="3" style="background:transparent;border:none;border-bottom:1px solid rgba(255,255,255,.18);color:#ECEBE3;font-family:'Bricolage Grotesque',sans-serif;font-size:18px;font-weight:300;padding:12px 2px;outline:none;resize:none;font-family:inherit" style-focus="border-bottom-color:#d8ff3e"></textarea>
+            <button type="submit" disabled="{{ sending }}" style="align-self:flex-start;margin-top:8px;background:#d8ff3e;color:#0b0b0a;border:none;border-radius:100px;padding:14px 32px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.06em;cursor:pointer" style-hover="background:#ECEBE3">{{ sendLabel }}</button>
+            <sc-if value="{{ error }}" hint-placeholder-val="{{ false }}">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#ff8a65">Something went wrong. Please try again or email me directly.</div>
+            </sc-if>
+          </form>
+        </sc-if>
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:.04em;color:#d8ff3e;padding:20px 0">✓ Got it — I'll be in touch soon.</div>
+        </sc-if>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;margin-top:64px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.04em;color:#9a998f" data-reveal="">
+        <div style="display:flex;gap:28px;flex-wrap:wrap">
+          <a href="mailto:zeweizhu588@gmail.com" style="color:#cfcec4;text-decoration:none" style-hover="color:#d8ff3e">zeweizhu588@gmail.com</a>
+          <a href="tel:+8615057403843" style="color:#cfcec4;text-decoration:none" style-hover="color:#d8ff3e">+86 150 5740 3843</a>
+          <a href="https://www.linkedin.com/in/zewei-zhu-358892258/?locale=en" target="_blank" rel="noopener noreferrer" style="color:#cfcec4;text-decoration:none" style-hover="color:#d8ff3e">LinkedIn ↗</a>
+        </div>
+        <span>© 2026 Zewei Zhu · Hardware GTM</span>
+      </div>
+    </div>
+  </section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { submitted: false, sending: false, error: false, projects: [] };
+
+  componentDidMount() {
+    import("./projects-data.js").then((mod) => this.setState({ projects: mod.projects }));
+    this.initDotField();
+    requestAnimationFrame(() => {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.style.opacity = "1";
+            e.target.style.transform = "none";
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: "0px 0px -6% 0px" });
+      document.querySelectorAll("[data-reveal]").forEach((el) => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(28px)";
+        el.style.transition = "opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)";
+        io.observe(el);
+      });
+    });
+  }
+
+  handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    this.setState({ sending: true, error: false });
+    try {
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        this.setState({ submitted: true, sending: false });
+      } else {
+        this.setState({ sending: false, error: true });
+      }
+    } catch (err) {
+      this.setState({ sending: false, error: true });
+    }
+  };
+
+  renderVals() {
+    const projects = this.state.projects;
+    const skills = ["Market Entry Strategy", "Market & Competitor Research", "Product Launch Management", "Category Management (P&L)", "Brand & Comms Strategy"];
+    const tools = ["Power BI", "CISION ONE", "Microsoft Office", "Excel", "PowerPoint", "AI Agent Building", "English IELTS 7"];
+    const blogCategories = [
+      { name: "Market Insights", desc: "Opportunities, competition, and shifting consumer behavior in emerging markets" },
+      { name: "Launch Retros", desc: "Post-mortems and lessons from full product launches" },
+      { name: "Playbooks & Tools", desc: "Practical tools and tactics for GTM teams" },
+    ];
+
+    // mosaic layout: first card of each group of 5 is big (2 rows tall), next 4 fill a
+    // 2x2 block to its right; a trailing group with only 1 leftover card becomes a
+    // full-width single-row banner instead of being forced into the big 2-row slot.
+    const groupCount = Math.ceil(projects.length / 5);
+    let rowCursor = 1;
+    const mosaicCards = [];
+    for (let g = 0; g < groupCount; g++) {
+      const groupItems = projects.slice(g * 5, g * 5 + 5);
+      if (groupItems.length === 1) {
+        const p = groupItems[0];
+        mosaicCards.push({ slug: p.slug, slotId: p.slotId, title: p.title, brand: p.en, img: p.img, col: "1 / 4", row: String(rowCursor) });
+        rowCursor += 1;
+      } else {
+        groupItems.forEach((p, posInGroup) => {
+          let col, row;
+          if (posInGroup === 0) { col = "1"; row = rowCursor + " / " + (rowCursor + 2); }
+          else if (posInGroup === 1) { col = "2"; row = String(rowCursor); }
+          else if (posInGroup === 2) { col = "3"; row = String(rowCursor); }
+          else if (posInGroup === 3) { col = "2"; row = String(rowCursor + 1); }
+          else { col = "3"; row = String(rowCursor + 1); }
+          mosaicCards.push({ slug: p.slug, slotId: p.slotId, title: p.title, brand: p.en, img: p.img, col, row });
+        });
+        rowCursor += 2;
+      }
+    }
+
+    return {
+      projects,
+      mosaicCards,
+      projectCount: projects.length,
+      skills,
+      tools,
+      blogCategories,
+      submitted: this.state.submitted,
+      sending: this.state.sending,
+      error: this.state.error,
+      sendLabel: this.state.sending ? "Sending…" : "Send →",
+      handleSubmit: this.handleSubmit,
+    };
+  }
+
+  initDotField() {
+    const canvas = document.querySelector("[data-dotfield]");
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    const TAU = Math.PI * 2, RAD = Math.PI / 180;
+
+    // ── origin + destinations (lat, lon) — China to the world ──
+    const ORIGIN = { lat: 22.5, lon: 114, name: "深圳" }; // Shenzhen
+    const DESTS = [
+      { lat: 41.0, lon: 28.9, name: "土耳其" },  // Istanbul
+      { lat: 25.2, lon: 55.3, name: "阿联酋" },  // Dubai
+      { lat: 32.1, lon: 34.8, name: "以色列" },  // Tel Aviv
+      { lat: 19.4, lon: -99.1, name: "墨西哥" }, // Mexico City
+      { lat: 51.5, lon: 0,    name: "欧洲" },    // London
+      { lat: 1.3,  lon: 103.8, name: "东南亚" }, // Singapore
+    ];
+
+    // unit vector from lat/lon (y up)
+    const toVec = (lat, lon) => {
+      const la = lat * RAD, lo = lon * RAD;
+      return { x: Math.cos(la) * Math.cos(lo), y: Math.sin(la), z: Math.cos(la) * Math.sin(lo) };
+    };
+
+    // globe grid points (graticule)
+    const grid = [];
+    for (let lat = -80; lat <= 80; lat += 8)
+      for (let lon = -180; lon < 180; lon += 8)
+        grid.push(toVec(lat, lon));
+
+    // great-circle arc samples between two unit vecs, lifted off surface
+    const arcPts = (a, b, n, lift) => {
+      const dot = Math.min(1, Math.max(-1, a.x*b.x + a.y*b.y + a.z*b.z));
+      const om = Math.acos(dot), so = Math.sin(om) || 1e-6;
+      const pts = [];
+      for (let i = 0; i <= n; i++) {
+        const t = i / n;
+        const s0 = Math.sin((1 - t) * om) / so, s1 = Math.sin(t * om) / so;
+        let x = s0*a.x + s1*b.x, y = s0*a.y + s1*b.y, z = s0*a.z + s1*b.z;
+        const len = Math.hypot(x, y, z) || 1e-6;
+        const r = 1 + lift * Math.sin(Math.PI * t);
+        pts.push({ x: x/len*r, y: y/len*r, z: z/len*r });
+      }
+      return pts;
+    };
+
+    const oVec = toVec(ORIGIN.lat, ORIGIN.lon);
+    const arcs = DESTS.map((d, i) => ({
+      pts: arcPts(oVec, toVec(d.lat, d.lon), 64, 0.42),
+      dest: toVec(d.lat, d.lon),
+      offset: i / DESTS.length,
+      speed: 0.18 + (i % 3) * 0.05,
+    }));
+
+    let w = 0, h = 0, cx = 0, cy = 0, R = 0;
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    let running = true;
+    // pointer-driven parallax (normalized -1..1), eased
+    let pX = 0, pY = 0, tpX = 0, tpY = 0;
+
+    const build = () => {
+      const rect = canvas.getBoundingClientRect();
+      w = rect.width; h = rect.height;
+      canvas.width = w * dpr; canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      cx = w * (w < 760 ? 0.5 : 0.72);
+      cy = h * (w < 760 ? 0.42 : 0.52);
+      R = Math.min(w, h) * (w < 760 ? 0.56 : 0.5);
+    };
+
+    const onMove = (e) => {
+      const rect = canvas.getBoundingClientRect();
+      tpX = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
+      tpY = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
+    };
+    const onLeave = () => { tpX = 0; tpY = 0; };
+
+    const section = canvas.parentElement;
+    section.addEventListener("pointermove", onMove);
+    section.addEventListener("pointerleave", onLeave);
+    window.addEventListener("resize", build);
+
+    // rotate a unit/scaled vec: tilt around X then spin around Y
+    const rot = (v, ay, tx) => {
+      const cy0 = Math.cos(tx), sy0 = Math.sin(tx);
+      let y1 = v.y * cy0 - v.z * sy0, z1 = v.y * sy0 + v.z * cy0, x1 = v.x;
+      const ca = Math.cos(ay), sa = Math.sin(ay);
+      return { x: x1 * ca + z1 * sa, y: y1, z: -x1 * sa + z1 * ca };
+    };
+    const project = (v) => ({ sx: cx + v.x * R, sy: cy - v.y * R, z: v.z });
+
+    const frame = () => {
+      if (!running) return;
+      pX += (tpX - pX) * 0.06; pY += (tpY - pY) * 0.06;
+      const t = performance.now() * 0.001;
+      const ay = t * 0.12 + pX * 0.6;        // auto-spin + parallax
+      const tx = -0.42 + pY * 0.28;          // base tilt + parallax
+      ctx.clearRect(0, 0, w, h);
+
+      // 1) globe graticule dots — back faint, front brighter
+      for (const g of grid) {
+        const v = rot(g, ay, tx), p = project(v);
+        const front = v.z > 0;
+        const a = front ? 0.10 + 0.32 * v.z : 0.05 + 0.05 * (1 + v.z);
+        ctx.fillStyle = "rgba(150,170,150," + a.toFixed(3) + ")";
+        ctx.beginPath();
+        ctx.arc(p.sx, p.sy, front ? 1.1 : 0.8, 0, TAU);
+        ctx.fill();
+      }
+
+      // 2) faint rim to suggest the sphere
+      ctx.strokeStyle = "rgba(216,255,62,0.10)";
+      ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.arc(cx, cy, R, 0, TAU); ctx.stroke();
+
+      // 3) arcs from China to the world
+      for (const arc of arcs) {
+        // draw the arc as fading segments (hidden behind globe)
+        for (let i = 0; i < arc.pts.length - 1; i++) {
+          const v1 = rot(arc.pts[i], ay, tx), v2 = rot(arc.pts[i + 1], ay, tx);
+          const p1 = project(v1), p2 = project(v2);
+          const zmid = (v1.z + v2.z) / 2;
+          // visible if lifted above front hemisphere; fade as it dips behind
+          const vis = Math.max(0, Math.min(1, (zmid + 0.25) / 0.9));
+          if (vis <= 0.01) continue;
+          ctx.strokeStyle = "rgba(216,255,62," + (0.55 * vis).toFixed(3) + ")";
+          ctx.lineWidth = 1.4;
+          ctx.beginPath(); ctx.moveTo(p1.sx, p1.sy); ctx.lineTo(p2.sx, p2.sy); ctx.stroke();
+        }
+        // traveling pulse
+        const tt = (t * arc.speed + arc.offset) % 1;
+        const idx = Math.floor(tt * (arc.pts.length - 1));
+        const pv = rot(arc.pts[idx], ay, tx), pp = project(pv);
+        const pvis = Math.max(0, Math.min(1, (pv.z + 0.25) / 0.9));
+        if (pvis > 0.02) {
+          const grd = ctx.createRadialGradient(pp.sx, pp.sy, 0, pp.sx, pp.sy, 9);
+          grd.addColorStop(0, "rgba(216,255,62," + (0.95 * pvis).toFixed(3) + ")");
+          grd.addColorStop(1, "rgba(216,255,62,0)");
+          ctx.fillStyle = grd;
+          ctx.beginPath(); ctx.arc(pp.sx, pp.sy, 9, 0, TAU); ctx.fill();
+          ctx.fillStyle = "rgba(245,255,220," + pvis.toFixed(3) + ")";
+          ctx.beginPath(); ctx.arc(pp.sx, pp.sy, 2, 0, TAU); ctx.fill();
+        }
+        // destination marker
+        const dv = rot(arc.dest, ay, tx), dp = project(dv);
+        if (dv.z > -0.05) {
+          const da = Math.max(0, Math.min(1, (dv.z + 0.05) / 0.6));
+          const pulse = 3 + 3 * (0.5 + 0.5 * Math.sin(t * 2 + arc.offset * 6));
+          ctx.strokeStyle = "rgba(216,255,62," + (0.4 * da).toFixed(3) + ")";
+          ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.arc(dp.sx, dp.sy, pulse, 0, TAU); ctx.stroke();
+          ctx.fillStyle = "rgba(216,255,62," + (0.9 * da).toFixed(3) + ")";
+          ctx.beginPath(); ctx.arc(dp.sx, dp.sy, 2.2, 0, TAU); ctx.fill();
+        }
+      }
+
+      // 4) origin marker (China) — strongest
+      const ov = rot(oVec, ay, tx), op = project(ov);
+      if (ov.z > -0.05) {
+        const oa = Math.max(0, Math.min(1, (ov.z + 0.05) / 0.6));
+        const ring = 5 + 6 * (0.5 + 0.5 * Math.sin(t * 1.6));
+        ctx.strokeStyle = "rgba(216,255,62," + (0.55 * oa).toFixed(3) + ")";
+        ctx.lineWidth = 1.4;
+        ctx.beginPath(); ctx.arc(op.sx, op.sy, ring, 0, TAU); ctx.stroke();
+        const grd = ctx.createRadialGradient(op.sx, op.sy, 0, op.sx, op.sy, 7);
+        grd.addColorStop(0, "rgba(216,255,62," + oa.toFixed(3) + ")");
+        grd.addColorStop(1, "rgba(216,255,62,0)");
+        ctx.fillStyle = grd;
+        ctx.beginPath(); ctx.arc(op.sx, op.sy, 7, 0, TAU); ctx.fill();
+        ctx.fillStyle = "rgba(245,255,220," + oa.toFixed(3) + ")";
+        ctx.beginPath(); ctx.arc(op.sx, op.sy, 3, 0, TAU); ctx.fill();
+      }
+
+      this._raf = requestAnimationFrame(frame);
+    };
+
+    build();
+    this._raf = requestAnimationFrame(frame);
+    this._cleanupDots = () => {
+      running = false;
+      cancelAnimationFrame(this._raf);
+      section.removeEventListener("pointermove", onMove);
+      section.removeEventListener("pointerleave", onLeave);
+      window.removeEventListener("resize", build);
+    };
+  }
+
+  componentWillUnmount() {
+    if (this._cleanupDots) this._cleanupDots();
+  }
+
+}
+</script>
+</body>
+</html>
